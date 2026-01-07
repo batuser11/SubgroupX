@@ -5,7 +5,7 @@
 **Target Date:** 2026-01-13 23:00 (UTC+8)
 
 > [!TIP]
-> **Star Milestone Goals**: 如果Star分别到达500star和1000star，开源部分会有能力增强！
+> **Star Milestone Goals**: 进化轨迹 —— GitHub Star 触及 500 / 1000 节点，开源核心将解锁深度能力进阶！
 
 ---
 
