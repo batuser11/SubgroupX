@@ -13,8 +13,8 @@ SubgroupX is a specialized AI Agent designed for high-fidelity cybersecurity ope
 > [!IMPORTANT]
 > **SubgroupX is scheduled for full deployment in:**
 > 
-> [ ![Countdown](https://readme-countdown.vercel.app/api/countdown?endtime=2026-01-13T23:00:00+08:00&bg=0a0a0a&color=00ffff&font=monospace) ](https://subgroupx.agent)
-> *(Note: The display updates dynamically based on the target window.)*
+> ![Countdown](countdown.svg)
+> *(Note: The display updates hourly via GitHub Actions.)*
 
 ## 01 // Core Capabilities
 - **Tactical Autonomy**: Self-directed vulnerability assessment and exploit chain execution.
