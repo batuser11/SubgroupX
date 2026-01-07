@@ -682,6 +682,13 @@ h3 {
     gap: 20px;
   }
 
+  .hero-title {
+    font-size: 2.2rem;
+    /* Reduce font size to fit "INTELLIGENCE" */
+    line-height: 1.1;
+  }
+
+
   /* Reset absolute positioning for mobile */
   .header-icons {
     position: relative;
