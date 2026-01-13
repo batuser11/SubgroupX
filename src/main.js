@@ -46,6 +46,19 @@ const TRANSLATIONS = {
     'collab.title': 'COLLABORATION',
     'collab.body':
       'Collaboration (research or commercialization): start from <a class="info-link" href="https://github.com/n-WN/SubgroupX/issues" target="_blank" rel="noopener noreferrer">GitHub Issues</a> — we’ll coordinate within a safe, public scope.',
+    'waitlist.title': 'WAITLIST',
+    'waitlist.body':
+      'Leave an email for the launch notification (optional). Prefer a dedicated address if privacy-sensitive.',
+    'waitlist.label': 'Email',
+    'waitlist.placeholder': 'Email address',
+    'waitlist.submit': 'JOIN',
+    'waitlist.status.success': 'Added to waitlist.',
+    'waitlist.status.already': 'Already on the list.',
+    'waitlist.status.invalid': 'Please enter a valid email.',
+    'waitlist.status.error': 'Submission failed. Please try again later.',
+    'waitlist.status.empty': 'Email is required.',
+    'waitlist.privacy':
+      'Privacy note: we store your email only for launch updates, do not sell/share it, and you can request removal via <a class="info-link" href="https://github.com/n-WN/SubgroupX/issues" target="_blank" rel="noopener noreferrer">GitHub</a>.',
     'info.title': 'PUBLIC STATUS',
     'info.launch': 'LAUNCH',
     'info.mode': 'MODE',
@@ -107,6 +120,18 @@ const TRANSLATIONS = {
     'collab.title': '合作',
     'collab.body':
       '合作（科研或商业化）：建议从 <a class="info-link" href="https://github.com/n-WN/SubgroupX/issues" target="_blank" rel="noopener noreferrer">GitHub Issues</a> 开始，我们会在可公开范围内对接沟通。',
+    'waitlist.title': '等待列表',
+    'waitlist.body': '留下邮箱（可选），用于发布通知。若介意隐私，建议使用专门/一次性邮箱。',
+    'waitlist.label': '邮箱',
+    'waitlist.placeholder': '邮箱地址',
+    'waitlist.submit': '提交',
+    'waitlist.status.success': '已加入等待列表。',
+    'waitlist.status.already': '该邮箱已在列表中。',
+    'waitlist.status.invalid': '请输入有效的邮箱地址。',
+    'waitlist.status.error': '提交失败，请稍后再试。',
+    'waitlist.status.empty': '请填写邮箱地址。',
+    'waitlist.privacy':
+      '隐私提示：邮箱仅用于发布通知，我们不会出售/共享；如需删除可通过 <a class="info-link" href="https://github.com/n-WN/SubgroupX/issues" target="_blank" rel="noopener noreferrer">GitHub</a> 联系我们。',
     'info.title': '公开状态',
     'info.launch': '发布时间',
     'info.mode': '模式',
@@ -147,6 +172,9 @@ const els = {
   countdownLabel: document.querySelector('.countdown-label'),
   releaseTime: document.getElementById('release-time'),
   langToggle: document.getElementById('lang-toggle'),
+  waitlistForm: document.getElementById('waitlist-form'),
+  waitlistEmail: document.getElementById('waitlist-email'),
+  waitlistStatus: document.getElementById('waitlist-status'),
 };
 
 function normalizeLang(lang) {
@@ -290,6 +318,47 @@ function updateCountdown() {
   els.seconds.textContent = Math.max(0, seconds).toString().padStart(2, '0');
 }
 
+function validateEmail(value) {
+  const email = String(value || '').trim();
+  if (!email) return { ok: false, reason: 'empty' };
+  if (email.length > 254) return { ok: false, reason: 'invalid' };
+  const simple = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!simple.test(email)) return { ok: false, reason: 'invalid' };
+  return { ok: true, email: email.toLowerCase() };
+}
+
+async function submitWaitlist(email, honeypot = '') {
+  const payload = {
+    email,
+    lang: state.lang,
+    company: honeypot,
+  };
+
+  const res = await fetch('/api/waitlist', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(payload),
+  });
+
+  let data = null;
+  try {
+    data = await res.json();
+  } catch {
+    data = null;
+  }
+
+  if (!res.ok) {
+    const code = data?.code || 'error';
+    const err = new Error(code);
+    err.code = code;
+    throw err;
+  }
+
+  return data;
+}
+
 // Initialize
 function init() {
   console.log('SubgroupX System Initialized');
@@ -305,6 +374,46 @@ function init() {
   loadTargetDate();
   updateCountdown();
   setInterval(updateCountdown, 1000);
+
+  if (els.waitlistForm && els.waitlistEmail && els.waitlistStatus) {
+    const submitButton = els.waitlistForm.querySelector('button[type="submit"]');
+    const honeypotInput = els.waitlistForm.querySelector('input[name="company"]');
+
+    els.waitlistForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      els.waitlistStatus.textContent = '';
+
+      const hp = honeypotInput?.value ? String(honeypotInput.value) : '';
+      const validated = validateEmail(els.waitlistEmail.value);
+      if (!validated.ok) {
+        els.waitlistStatus.textContent =
+          validated.reason === 'empty' ? t('waitlist.status.empty') : t('waitlist.status.invalid');
+        return;
+      }
+
+      if (hp) {
+        els.waitlistStatus.textContent = t('waitlist.status.success');
+        return;
+      }
+
+      if (submitButton) submitButton.disabled = true;
+
+      try {
+        const result = await submitWaitlist(validated.email, hp);
+        const already = Boolean(result?.already);
+        els.waitlistStatus.textContent = already ? t('waitlist.status.already') : t('waitlist.status.success');
+        els.waitlistEmail.value = '';
+      } catch (err) {
+        if (err?.code === 'invalid_email') {
+          els.waitlistStatus.textContent = t('waitlist.status.invalid');
+        } else {
+          els.waitlistStatus.textContent = t('waitlist.status.error');
+        }
+      } finally {
+        if (submitButton) submitButton.disabled = false;
+      }
+    });
+  }
 
   // Simple scroll reveal (optional enhancement)
   const observer = new IntersectionObserver((entries) => {

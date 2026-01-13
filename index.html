@@ -260,6 +260,24 @@
             — we’ll coordinate within a safe, public scope.
           </p>
         </div>
+
+        <div class="waitlist-callout">
+          <div class="waitlist-title mono" data-i18n="waitlist.title">WAITLIST</div>
+          <p class="waitlist-body" data-i18n-html="waitlist.body">
+            Leave an email for the launch notification (optional). Prefer a dedicated address if privacy-sensitive.
+          </p>
+          <form id="waitlist-form" class="waitlist-form" novalidate>
+            <label class="sr-only" for="waitlist-email" data-i18n="waitlist.label">Email</label>
+            <input id="waitlist-email" name="email" type="email" class="waitlist-input" autocomplete="email"
+              data-i18n-attr="placeholder" data-i18n-attr-key="waitlist.placeholder" placeholder="Email address" />
+            <input class="waitlist-hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" />
+            <button class="waitlist-submit mono" type="submit" data-i18n="waitlist.submit">JOIN</button>
+          </form>
+          <div id="waitlist-status" class="waitlist-status mono" aria-live="polite"></div>
+          <p class="waitlist-privacy" data-i18n-html="waitlist.privacy">
+            Privacy note: we store your email only for launch updates, do not sell/share it, and you can request removal via GitHub.
+          </p>
+        </div>
       </section>
 
       <section id="awards" class="content-section">

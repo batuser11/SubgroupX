@@ -1,3 +1,8 @@
 name = "subgroupx-agent"
 compatibility_date = "2026-01-07"
 pages_build_output_dir = "dist"
+
+[[d1_databases]]
+binding = "WAITLIST_DB"
+database_name = "subgroupx-waitlist"
+database_id = "55637cf2-a056-4cd3-a575-d19048e50f2b"
