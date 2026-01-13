@@ -1,10 +1,10 @@
 /**
  * SubgroupX Landing Page Logic
- * Target Date: 2026-01-13T23:00:00+08:00
+ * Target Date: 2026-01-15T23:00:00+08:00
  */
 
 // Target Date Configuration
-const TARGET_DATE = new Date('2026-01-13T23:00:00+08:00');
+const TARGET_DATE = new Date('2026-01-15T23:00:00+08:00');
 
 // DOM Elements
 const els = {
