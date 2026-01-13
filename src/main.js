@@ -58,7 +58,7 @@ const TRANSLATIONS = {
     'waitlist.status.error': 'Submission failed. Please try again later.',
     'waitlist.status.empty': 'Email is required.',
     'waitlist.privacy':
-      'Privacy note: we store your email only for launch updates, do not sell/share it, and you can request removal via <a class="info-link" href="https://github.com/n-WN/SubgroupX/issues" target="_blank" rel="noopener noreferrer">GitHub</a>.',
+      'Privacy note: stored in Cloudflare D1 (email + timestamp only) for launch updates. No marketing, no resale. Request removal via <a class="info-link" href="https://github.com/n-WN/SubgroupX/issues" target="_blank" rel="noopener noreferrer">GitHub</a>.',
     'info.title': 'PUBLIC STATUS',
     'info.launch': 'LAUNCH',
     'info.mode': 'MODE',
@@ -131,7 +131,7 @@ const TRANSLATIONS = {
     'waitlist.status.error': '提交失败，请稍后再试。',
     'waitlist.status.empty': '请填写邮箱地址。',
     'waitlist.privacy':
-      '隐私提示：邮箱仅用于发布通知，我们不会出售/共享；如需删除可通过 <a class="info-link" href="https://github.com/n-WN/SubgroupX/issues" target="_blank" rel="noopener noreferrer">GitHub</a> 联系我们。',
+      '隐私提示：邮箱将存储在 Cloudflare D1（仅邮箱 + 提交时间），仅用于发布通知；不做营销，不出售/共享。如需删除可通过 <a class="info-link" href="https://github.com/n-WN/SubgroupX/issues" target="_blank" rel="noopener noreferrer">GitHub</a> 联系我们。',
     'info.title': '公开状态',
     'info.launch': '发布时间',
     'info.mode': '模式',
