@@ -24,3 +24,8 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Build Pages Functions (Cloudflare)
+        run: |
+          mkdir -p .wrangler-tmp
+          npx --yes wrangler@4.35.0 pages functions build --project-directory . --outdir .wrangler-tmp --output-routes-path .wrangler-tmp/_routes.json
+          test -f .wrangler-tmp/index.js

@@ -12,7 +12,6 @@ const TRANSLATIONS = {
     'nav.protocol': '[ PROTOCOL ]',
     'nav.brief': '[ BRIEF ]',
     'nav.honors': '[ HONORS ]',
-    'header.github': 'GITHUB',
     'tooltip.arxiv': 'The manuscript is being refined. Please check back soon.',
     'status.pending': 'SYSTEM_STATUS: PENDING_LAUNCH',
     'hero.title.top': 'GEOMETRIC',
@@ -45,7 +44,7 @@ const TRANSLATIONS = {
     'cta.github.secondary': 'Follow on GitHub',
     'collab.title': 'COLLABORATION',
     'collab.body':
-      'Collaboration (research or commercialization): start from <a class="info-link" href="https://github.com/n-WN/SubgroupX/issues" target="_blank" rel="noopener noreferrer">GitHub Issues</a> — we’ll coordinate within a safe, public scope.',
+      'Collaboration (research or commercialization): email <a class="info-link" href="mailto:Latticebased@outlook.com">Latticebased@outlook.com</a> — keep it non-sensitive.',
     'waitlist.title': 'WAITLIST',
     'waitlist.body':
       'Leave an email for the launch notification (optional). Prefer a dedicated address if privacy-sensitive.',
@@ -58,7 +57,7 @@ const TRANSLATIONS = {
     'waitlist.status.error': 'Submission failed. Please try again later.',
     'waitlist.status.empty': 'Email is required.',
     'waitlist.privacy':
-      'Privacy note: stored in Cloudflare D1 (email + timestamp only) for launch updates. No marketing, no resale. Request removal via <a class="info-link" href="https://github.com/n-WN/SubgroupX/issues" target="_blank" rel="noopener noreferrer">GitHub</a>.',
+      'Privacy note: stored in Cloudflare D1 (email + timestamp only) for launch updates. No marketing, no resale. Request removal by emailing <a class="info-link" href="mailto:Latticebased@outlook.com">Latticebased@outlook.com</a> (from the same address).',
     'info.title': 'PUBLIC STATUS',
     'info.launch': 'LAUNCH',
     'info.mode': 'MODE',
@@ -86,7 +85,6 @@ const TRANSLATIONS = {
     'nav.protocol': '[ 能力 ]',
     'nav.brief': '[ 简报 ]',
     'nav.honors': '[ 荣誉 ]',
-    'header.github': 'GITHUB',
     'tooltip.arxiv': '稿件正在完善中，敬请期待。',
     'status.pending': 'SYSTEM_STATUS: 待发布',
     'hero.title.top': 'GEOMETRIC',
@@ -119,7 +117,7 @@ const TRANSLATIONS = {
     'cta.github.secondary': '关注 GitHub 更新',
     'collab.title': '合作',
     'collab.body':
-      '合作（科研或商业化）：建议从 <a class="info-link" href="https://github.com/n-WN/SubgroupX/issues" target="_blank" rel="noopener noreferrer">GitHub Issues</a> 开始，我们会在可公开范围内对接沟通。',
+      '合作（科研或商业化）：请邮件联系 <a class="info-link" href="mailto:Latticebased@outlook.com">Latticebased@outlook.com</a>，沟通请仅包含可公开/非敏感信息。',
     'waitlist.title': '等待列表',
     'waitlist.body': '留下邮箱（可选），用于发布通知。若介意隐私，建议使用专门/一次性邮箱。',
     'waitlist.label': '邮箱',
@@ -131,7 +129,7 @@ const TRANSLATIONS = {
     'waitlist.status.error': '提交失败，请稍后再试。',
     'waitlist.status.empty': '请填写邮箱地址。',
     'waitlist.privacy':
-      '隐私提示：邮箱将存储在 Cloudflare D1（仅邮箱 + 提交时间），仅用于发布通知；不做营销，不出售/共享。如需删除可通过 <a class="info-link" href="https://github.com/n-WN/SubgroupX/issues" target="_blank" rel="noopener noreferrer">GitHub</a> 联系我们。',
+      '隐私提示：邮箱将存储在 Cloudflare D1（仅邮箱 + 提交时间），仅用于发布通知；不做营销，不出售/共享。如需删除，请使用同一邮箱发邮件至 <a class="info-link" href="mailto:Latticebased@outlook.com">Latticebased@outlook.com</a>。',
     'info.title': '公开状态',
     'info.launch': '发布时间',
     'info.mode': '模式',
