@@ -1,5 +1,5 @@
 # SubgroupX: Geometric Intelligence in Offensive Security
-[![arXiv](https://img.shields.io/badge/arXiv-2601.09129-b31b1b.svg)](https://arxiv.org/abs/2601.09129)
+
 **Technical Report // Normal Subgroup**  
 **Version:** 1.0.0-PROTOTYPE  
 **Status:** [PENDING_LAUNCH]  
@@ -7,9 +7,6 @@
 
 > [!TIP]
 > **Star Milestone Goals**: 进化轨迹 —— GitHub Star 触及 500 / 1000 节点，开源核心将解锁深度能力进阶！
-
-> [!CAUTION]
-> **AI Disclosure**: This project and its documentation are primarily AI-generated. Some information, achievements, or technical details may be simulated or inaccurate.
 
 ---
 
